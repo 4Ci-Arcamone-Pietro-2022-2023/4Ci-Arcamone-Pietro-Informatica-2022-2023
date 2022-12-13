@@ -4,7 +4,7 @@ public class Articolo
     private double sconto;
     private double prezzo;
     public Articolo(){
-        this.nome="";
+        this.nome="anonimo";
         this.sconto=0.0;
         this.prezzo=0.0;
     }
