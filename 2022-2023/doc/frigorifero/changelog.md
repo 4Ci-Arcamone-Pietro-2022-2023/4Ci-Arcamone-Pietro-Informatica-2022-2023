@@ -1,10 +1,10 @@
 # Registro delle modifiche
 Tutte le modifiche importanti a questo progetto saranno documentate in questo file.
 
-##[0.01] - 07-10-2022
+## [0.01] - 07-10-2022
 Ho aggiunto il costruttore Frigorifero;
 
-##[0.02] - 07-10-2022
+## [0.02] - 07-10-2022
 Ho aggiunto il metodo accensione e spegnimento;
 
 ##[0.03] - 07-10-2022
