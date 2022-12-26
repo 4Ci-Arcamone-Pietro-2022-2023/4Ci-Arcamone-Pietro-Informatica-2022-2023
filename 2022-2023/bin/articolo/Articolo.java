@@ -16,15 +16,16 @@ public class Articolo
     public void setSconto(double s){
         if(s>1 && s<99){
             this.sconto=s;
-        }else{
+        }/*else{
             this.sconto=0;
-        }
+        } la set modifica il valore solo se necessario, non deve se non c'è un parametro. */
     }
     public void setPrezzo(double p){
         if(p>-1){
             this.prezzo=p;
-        }else{
+        }/*else{
             this.prezzo=0;
-        }
+        }la set modifica il valore solo se necessario, non deve se non c'è un parametro. */
     }
 }
+// mancano diversi metodi ****************
