@@ -1,0 +1,45 @@
++---------------+
+|     Libro     |
++---------------+
+| - titolo: String|
+| - autore: String|
+| - numPagine: int|
++---------------+
+| + Libro(titolo: String, autore: String, numPagine: int)|
+| + getTitolo(): String|
+| + getAutore(): String|
+| + getNumPagine(): int|
+| + setTitolo(titolo: String): void|
+| + setAutore(autore: String): void|
+| + setNumPagine(numPagine: int): void|
+| + toString(): String|
++---------------+
+
+
++--------------------------------+
+|   LibriCalculator             |
++--------------------------------+
+| - libri: ArrayList<Libro>      |
+| - in: Scanner                  |
+| - autore: String               |
++--------------------------------+
+| + start(nomeFile: String): void|
+| + descriviAttività(): void     |
+| + getInput(): String           |
+| + LibriCalculator()            |
+| + leggiLibriDaFile(nomeFile: String): void|
+| + stampaLibri(): void          |
+| + trovaLibroConNumPagineMaggiore(): Libro|
+| + stampaLibriDiAutore(autore: String): void|
+| + stampaLibriPerNumPagine(): void|
+| + toString(autore: String): String|
++--------------------------------+
+
+
++-----------------------+
+|   TestCalculator      |
++-----------------------+
+|                       |
++-----------------------+
+| + main(args: String[])|
++-----------------------+
