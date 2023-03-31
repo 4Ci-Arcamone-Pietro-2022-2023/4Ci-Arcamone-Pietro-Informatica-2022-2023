@@ -1,0 +1,51 @@
++-------------------------------------+
+|                Sim                  |
++-------------------------------------+
+| - COSTO_MINUTO: double = 0.20        |
+| - consumi: double                   |
+| - min_disponibili: double           |
+| - min_servizio: double              |
++-------------------------------------+
+| + Sim()                             |
+| + Sim(min_disp: double, min_ser: double) |
+| + Sim(sim: Sim)                     |
+| + setMinuti(min_disp: double): void |
+| + getMinuti(): double               |
+| + setConsumi(c: double): void       |
+| + getConsumi(): double              |
+| + setServizio(min_ser: double): void|
+| + getServizio(): double             |
+| + ricarica(ric: double): void       |
+| + eroga(): boolean                  |
+| + spesaEroga(): void                |
+| + costoMinuto(): double             |
+| + toString(): String                |
++-------------------------------------+
+
+
+
++----------------------------------+
+|           SimCalculator          |
++----------------------------------+
+| - lista: ArrayList<Sim>          |
++----------------------------------+
+| + SimCalculator()                |
+| + SimCalculator(ArrayList<Sim>)  |
+| + start(): void                  |
+| + descriviApp(): void             |
+| + inputDati(): void              |
+| + visualizzaRisultati(): void    |
+| + leggiFile(String): void        |
+| + scriviFile(): void             |
+| + memorizzaSim(String[]): void   |
++----------------------------------+
+
+
+
++---------------------------------+
+|         SimTest                 |
++---------------------------------+
+|                                 |
++---------------------------------+
+| + main(args: String[]) : void   |
++---------------------------------+
