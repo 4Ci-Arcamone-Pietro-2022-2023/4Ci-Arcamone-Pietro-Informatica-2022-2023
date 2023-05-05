@@ -2,8 +2,8 @@ import java.util.*;
 import java.io.*;
 public class LibriCalculator {
     private ArrayList<Libro> libri;
-    Scanner in = new Scanner(System.in);
-    String autore ="";
+    //Scanner in = new Scanner(System.in);
+    //String autore ="";
     public void start(String nomeFile){
         this.autore=this.getInput();
         this.descriviAttività();
@@ -18,8 +18,11 @@ public class LibriCalculator {
         System.out.println("Dico cosa fa il programma :)");
     }
     public String getInput(){
+        Scanner in = new Scanner(System.in);
+        String autore ="";
+
         System.out.println("Dimmi il nome dell'autore");
-        String autore = in.nextLine();
+        autore = in.nextLine();
         return autore;
     }
     public LibriCalculator() {
@@ -27,14 +30,20 @@ public class LibriCalculator {
     }
     public void leggiLibriDaFile(String nomeFile) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(nomeFile));
+        String linea;
+        String[] campi;
+        String titolo;
+        String autore;
+        int numPagine;
+        Libro libro;
         while (scanner.hasNextLine()) {
-            String linea = scanner.nextLine();
-            String[] campi = linea.split(";");
+            linea = scanner.nextLine();
+            campi = linea.split(";");
             if (campi.length == 3) {
-                String titolo = campi[0];
-                String autore = campi[1];
-                int numPagine = Integer.parseInt(campi[2]);
-                Libro libro = new Libro(titolo, autore, numPagine);
+                titolo = campi[0];
+                autore = campi[1];
+                numPagine = Integer.parseInt(campi[2]);
+                libro = new Libro(titolo, autore, numPagine);
                 libri.add(libro);
             }
         }
